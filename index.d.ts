@@ -1,4 +1,4 @@
-declare module "@imputnet/psl" {
+declare module "@imput/psl" {
     export function parse(domain: string): ParsedDomain | ParseError;
 
     export function get(domain: null | undefined): null;
