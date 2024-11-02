@@ -1,16 +1,11 @@
 # psl (Public Suffix List)
 
-[![Node.js CI](https://github.com/lupomontero/psl/actions/workflows/node.js.yml/badge.svg)](https://github.com/lupomontero/psl/actions/workflows/node.js.yml)
-
 `psl` is a `JavaScript` domain name parser based on the
 [Public Suffix List](https://publicsuffix.org/).
 
 This implementation is tested against the
 [test data hosted by Mozilla](http://mxr.mozilla.org/mozilla-central/source/netwerk/test/unit/data/test_psl.txt?raw=1)
 and kindly provided by [Comodo](https://www.comodo.com/).
-
-Cross browser testing provided by
-[<img alt="BrowserStack" width="160" src="./browserstack-logo.svg" />](https://www.browserstack.com/)
 
 ## What is the Public Suffix List?
 
@@ -25,7 +20,7 @@ A "public suffix" is one under which Internet users can directly register names.
 Some examples of public suffixes are ".com", ".co.uk" and "pvt.k12.wy.us". The
 Public Suffix List is a list of all known public suffixes.
 
-Source: http://publicsuffix.org
+Source: https://publicsuffix.org/
 
 
 ## Installation
@@ -35,24 +30,6 @@ Source: http://publicsuffix.org
 ```sh
 npm install --save psl
 ```
-
-### Browser
-
-Download [psl.min.js](https://raw.githubusercontent.com/lupomontero/psl/main/dist/psl.min.js)
-and include it in a script tag.
-
-```html
-<script src="psl.min.js"></script>
-```
-
-This script is browserified and wrapped in a [umd](https://github.com/umdjs/umd)
-wrapper so you should be able to use it standalone or together with a module
-loader.
-
-The script is also available on most popular CDNs. For example:
-
-* https://cdnjs.cloudflare.com/ajax/libs/psl/1.9.0/psl.min.js
-* https://unpkg.com/psl@1.9.0/dist/psl.min.js
 
 ## API
 
